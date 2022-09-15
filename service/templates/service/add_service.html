@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block title %}<title>ADD SERVICE PAGE</title>{% endblock %}
+    
+
+{% block content %}
+    
+
+    <form method="post" action="{% url 'service:add_service' %}" style="text-align:center; margin-top:10%">
+        {% csrf_token %}
+        <label for="name">name:</label><br>
+        <input type="name" id="name" name="name"><br>
+        <label for="color">color:</label><br>
+        <input type="color_name" id="color" name="color"><br><br>
+        <input type="submit" class="btn btn-success" value="SAVE">
+    </form> 
+
+
+{% endblock %}

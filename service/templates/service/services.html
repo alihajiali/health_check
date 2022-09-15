@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block title %}<title>SERVICES PAGE</title>{% endblock %}
+    
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            {% for service in response %}
+                <div class="col-sm-3">
+                    <span class="btn btn-{{ service.color }}">{{ service.name }}</span><br>
+                    <a href="{% url 'service:change_status' service.name %}"><span class="btn btn-dark">{{ service.status }}</span></a>    <a href="{% url 'service:edit_service' service.id %}" style="color: black;"><i class="fa fa-pencil"></i></a>
+                </div>
+            {% endfor %}
+        </div>
+      </div>
+
+{% endblock %}
