@@ -17,6 +17,14 @@ pip install -r requirment.txt
 
 python manage.py runserver 0.0.0.0:8000
 ----------------------------------------------------------------
-
+home page:
 
 ![alt text](https://github.com/alihajiali/health_check/blob/main/images/home.png)
+
+login page:
+
+![alt text](https://github.com/alihajiali/health_check/blob/main/images/login.png)
+
+service_manage page:
+
+![alt text](https://github.com/alihajiali/health_check/blob/main/images/service_manage.png)
